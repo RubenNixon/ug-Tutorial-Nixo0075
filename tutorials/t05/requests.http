@@ -1,0 +1,23 @@
+### 1. Test GET Route (Task 3)
+GET http://localhost:5100/api/status
+Accept: application/json
+
+### 2. Test POST Route (Task 4)
+POST http://localhost:5100/api/users
+Content-Type: application/json
+
+{
+    "name": "Alice",
+    "role": "Software Engineer",
+    "department": "Backend"
+}
+
+### 3. Test Expansion Task (Task 5)
+### This sends BOTH a URL Query (?category=technology) AND a JSON body
+POST http://localhost:5100/api/search?category=technology&sort=desc
+Content-Type: application/json
+
+{
+    "searchTerm": "Express routing",
+    "pageNumber": 1
+}
