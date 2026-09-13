@@ -1,0 +1,47 @@
+### Task 2.1 GET All Students
+GET http://localhost:5100/api/students
+Content-Type: application/json
+
+
+### Task 2.2 GET Students by Major (Query String)
+GET http://localhost:5100/api/students?major=Mathematics
+Content-Type: application/json
+
+
+### Task 2.3 GET Single Student by ID
+GET http://localhost:5100/api/students/1
+Content-Type: application/json
+
+
+### Task 3.1 POST (Create) a New Student
+POST http://localhost:5100/api/students
+Content-Type: application/json
+
+{
+    "name": "Grace Hopper",
+    "major": "Computer Science"
+}
+
+
+### Task 3.2 PUT (Update) an Existing Student
+PUT http://localhost:5100/api/students/1
+Content-Type: application/json
+
+{
+    "major": "Advanced Mathematics"
+}
+
+
+### Task 4.1 Test error
+GET http://localhost:5100/api/test-error
+
+
+### Task 5.1 DELETE a Student (Fails - Missing Authorization)
+DELETE http://localhost:5100/api/students/2
+Content-Type: application/json
+
+
+### Task 5.2 DELETE a Student (Succeeds - Correct Authorization)
+DELETE http://localhost:5100/api/students/2
+Content-Type: application/json
+Authorization: admin123
