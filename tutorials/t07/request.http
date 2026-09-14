@@ -1,0 +1,10 @@
+POST http://localhost:5100/api/test-setup
+Content-Type: application/json
+
+{
+    "username": "Jane Doe",
+    "email": "jane@uni.edu.au",
+    "title": "Full-Stack",
+    "units": 4.5,
+    "prereqs": ["COMP1102", "COMP1103"]
+}
