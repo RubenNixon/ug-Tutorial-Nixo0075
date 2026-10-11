@@ -1,0 +1,44 @@
+### Posts Variables
+@postUrl = http://localhost:5100/api/posts
+
+### P1. Create Post (POST)
+POST {{postUrl}}
+Content-Type: application/json
+
+{
+  "title": "Hello World",
+  "content": "My first bulletin board post",
+  "postID": 1
+}
+
+### P2. Create Post 2 (POST)
+POST {{postUrl}}
+Content-Type: application/json
+
+{
+  "title": "Second Post",
+  "content": "Another post for the board",
+  "postID": 2
+}
+
+### P3. Get All Posts (GET)
+GET {{postUrl}}
+
+### P4. Get Post by ID (GET)
+GET {{postUrl}}/1
+
+### P5. Update Post (PUT)
+PUT {{postUrl}}/1
+Content-Type: application/json
+
+{
+  "title": "Hello World (edited)",
+  "content": "Updated content",
+  "postID": 1
+}
+
+### P6. Delete Post (DELETE)
+DELETE {{postUrl}}/2
+
+### P7. Missing Post (GET - 404 Not Found)
+GET {{postUrl}}/999
