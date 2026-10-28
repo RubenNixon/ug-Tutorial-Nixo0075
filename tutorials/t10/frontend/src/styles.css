@@ -1,0 +1,84 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e272e;
+  color: #d2dae2;
+  margin: 0;
+  padding: 20px;
+}
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.header {
+  color: #0be881;
+  border-bottom: 2px solid #485460;
+  padding-bottom: 10px;
+}
+.empty-text {
+  text-align: center;
+  opacity: 0.5;
+}
+
+
+.form-card,
+.item-card {
+  background: #2f3640;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #0fbcf9;
+}
+.edit-mode {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  border-left: 4px solid #ffa801;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #1e272e;
+  color: white;
+  border: 1px solid #485460;
+  border-radius: 4px;
+}
+
+
+button {
+  padding: 10px 15px;
+  background: #0fbcf9;
+  color: #1e272e;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+button:disabled {
+  background: #485460;
+  color: #808e9b;
+  cursor: not-allowed;
+}
+
+
+.delete-btn {
+  background: #ff3f34;
+  color: white;
+}
+.cancel-btn {
+  background: #808e9b;
+  color: white;
+}
+.edit-btn {
+  background: #ffa801;
+  color: #1e272e;
+}
