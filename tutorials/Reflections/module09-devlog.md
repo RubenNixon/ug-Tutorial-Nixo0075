@@ -97,9 +97,7 @@ Figure 1 The completed t09 app in the browser showing the User Directory fetched
 t09 Figure 1 ![GraceHopper](<../imgs/imgs/Tut09 image1.png>) This shows the React frontend running on port 5173 displaying data that travelled the full stack: the browser calls the Express API through the public Codespaces address, the controller queries MongoDB via Mongoose, and the JSON comes back to be rendered. The search card below the directory calls the parameterised GET /api/users/:id route and renders the single matching user in the result box.
 
 
-Figure 2 The same page during the 2 second simulated delay, showing the "Establishing bridge... Loading data." card.
-
-t09 Figure 2![Loading State](<../imgs/Tut09 image2.png>) This shows the defensive UI handling the loading state. The backend controller deliberately delays its response by 2 seconds with setTimeout to simulate real-world network latency, and the component shows a loading message in the meantime instead of a blank page.
+t09 Figure 2 [Loading State](<../imgs/imgs/Tut09 image2.png>) This shows the defensive UI handling the loading state. The backend controller deliberately delays its response by 2 seconds with setTimeout to simulate real-world network latency, and the component shows a loading message in the meantime instead of a blank page.
 
 
 
